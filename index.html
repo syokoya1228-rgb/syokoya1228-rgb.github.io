@@ -189,34 +189,38 @@
     position: absolute; inset: 0;
     background: linear-gradient(135deg, #1a0e08 0%, #2c1810 100%);
     color: #fff;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    z-index: 100; padding: 20px; text-align: center;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: flex-start;
+    z-index: 100; padding: 16px 20px 24px;
+    text-align: center;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   #start-screen h1 {
-    font-size: 38px;
+    font-size: 32px;
     background: linear-gradient(90deg, #ffd54a, #ff8c42);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     background-clip: text;
     text-shadow: 0 0 30px rgba(255,213,74,0.4);
-    margin-bottom: 6px; line-height: 1.1;
+    margin-bottom: 4px; line-height: 1.1;
+    margin-top: 8px;
   }
-  #start-screen .subtitle { font-size: 14px; color: #ffd54a; margin-bottom: 18px; }
+  #start-screen .subtitle { font-size: 13px; color: #ffd54a; margin-bottom: 12px; }
   .rules {
     background: rgba(255,255,255,0.07);
     border: 1px solid rgba(255,213,74,0.2);
     border-radius: 12px;
-    padding: 14px 18px;
-    margin-bottom: 22px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
     text-align: left;
-    font-size: 13px; line-height: 1.7;
-    max-width: 320px;
+    font-size: 12px; line-height: 1.6;
+    max-width: 340px; width: 100%;
   }
   .rules .rule-title {
     font-weight: bold; color: #ffd54a;
-    margin-bottom: 6px; font-size: 14px;
+    margin-bottom: 4px; font-size: 13px;
     border-bottom: 1px solid rgba(255,213,74,0.3);
-    padding-bottom: 4px;
+    padding-bottom: 3px;
   }
   .start-btn {
     background: linear-gradient(135deg, #ffd54a, #ff8c42);
@@ -226,6 +230,8 @@
     border-radius: 28px;
     box-shadow: 0 6px 14px rgba(255,140,66,0.4);
     cursor: pointer;
+    margin: 12px 0 8px;
+    flex-shrink: 0;
   }
   .start-btn:active { transform: scale(0.96); }
   #end-screen h2 { font-size: 32px; margin-bottom: 8px; }
